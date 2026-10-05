@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.adityaauliasubhan_3tia.databinding.ActivityLoginBinding
 import com.example.adityaauliasubhan_3tia.databinding.ActivityMainBinding
+import com.example.adityaauliasubhan_3tia.pertemuan_5.LimaActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 .show()
         }
+
         binding.alert.setOnClickListener {
             MaterialAlertDialogBuilder(this)
                 .setTitle("Hapus data")
@@ -56,6 +58,11 @@ class MainActivity : AppCompatActivity() {
                 }
                 .setCancelable(false)
                 .show()
+        }
+
+        binding.btntolima.setOnClickListener {
+            val intent = Intent(this@MainActivity, LimaActivity::class.java)
+            startActivity(intent)
         }
     }
 }

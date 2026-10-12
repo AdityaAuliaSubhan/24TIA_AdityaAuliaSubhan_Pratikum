@@ -31,13 +31,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
         val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
-        // Kondisi jika isLogin bernilai true
-        val isLogin = sharedPref.getBoolean("isLogin", false)
-        if (isLogin) {
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-            return
-        }
 
         binding.btnLogin.setOnClickListener {
             val user = binding.edtusername.text.toString()

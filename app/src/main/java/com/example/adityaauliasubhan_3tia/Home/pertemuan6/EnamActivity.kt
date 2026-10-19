@@ -1,4 +1,4 @@
-package com.example.adityaauliasubhan_3tia.pertemuan6
+package com.example.adityaauliasubhan_3tia.Home.pertemuan6
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,8 +9,6 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.adityaauliasubhan_3tia.R
 import com.example.adityaauliasubhan_3tia.databinding.ActivityEnamBinding
-import com.example.adityaauliasubhan_3tia.databinding.ActivityLimaBinding
-import com.example.adityaauliasubhan_3tia.databinding.ActivityLoginBinding
 
 class EnamActivity : AppCompatActivity() {
 

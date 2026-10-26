@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.adityaauliasubhan_3tia.Home.pertemuan6.EnamActivity
 import com.example.adityaauliasubhan_3tia.Home.pertemuan_5.LimaActivity
+import com.example.adityaauliasubhan_3tia.Home.pertemuan_9.NinthActivity
 import com.example.adityaauliasubhan_3tia.LoginActivity
 import com.example.adityaauliasubhan_3tia.MainActivity
 import com.example.adityaauliasubhan_3tia.R
@@ -79,6 +80,11 @@ class HomeFragment : Fragment() {
 
         binding.btntoenam.setOnClickListener {
             val intent = Intent(requireContext(), EnamActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btntosembilan.setOnClickListener {
+            val intent = Intent(requireContext(), NinthActivity::class.java)
             startActivity(intent)
         }
 

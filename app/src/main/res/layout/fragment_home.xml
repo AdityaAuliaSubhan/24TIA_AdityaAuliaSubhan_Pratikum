@@ -19,17 +19,7 @@
         app:subtitleTextColor="@android:color/white"
         app:titleTextColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log Out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btntolima"
-        app:layout_constraintVertical_bias="0.53" />
+
 
     <TextView
         android:id="@+id/txtUsername"
@@ -123,26 +113,53 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <Button
-        android:id="@+id/btntolima"
-        android:layout_width="133dp"
-        android:layout_height="47dp"
-        android:text="Pertemuan 5"
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:padding="16dp"
+        app:columnCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.915"
+        app:useDefaultMargins="true">
 
-    <Button
-        android:id="@+id/btntoenam"
-        android:layout_width="133dp"
-        android:layout_height="47dp"
-        android:text="Pertemuan 6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
-        app:layout_constraintVertical_bias="0.348" />
+        <Button
+            android:id="@+id/btntolima"
+            android:layout_width="133dp"
+            android:layout_height="47dp"
+            android:text="5"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"/>
 
+        <Button
+            android:id="@+id/btntoenam"
+            android:layout_width="133dp"
+            android:layout_height="54dp"
+            android:text="6"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"/>
+
+        <Button
+            android:id="@+id/btntosembilan"
+            android:layout_width="133dp"
+            android:layout_height="47dp"
+            android:text="9"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"/>
+    </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

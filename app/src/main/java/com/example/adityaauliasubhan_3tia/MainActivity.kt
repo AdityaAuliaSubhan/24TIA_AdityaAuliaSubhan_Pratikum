@@ -72,6 +72,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
         binding.btnLogout.setOnClickListener {
             AlertDialog.Builder(this)
                 .setTitle("Logout")

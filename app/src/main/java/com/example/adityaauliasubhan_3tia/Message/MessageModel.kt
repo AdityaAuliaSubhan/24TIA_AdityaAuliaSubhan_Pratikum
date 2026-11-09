@@ -1,7 +1,7 @@
 package com.example.adityaauliasubhan_3tia.Message
 
-data class MessageModel(
-    val senderName: String,
-    val messageText: String,
-    val avatarUrl: String
-)
+    data class MessageModel(
+        val senderName: String,
+        val messageText: String,
+        val avatarUrl: String
+    )

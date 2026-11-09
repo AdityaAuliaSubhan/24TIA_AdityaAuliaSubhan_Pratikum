@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.adityaauliasubhan_3tia.Home.pertemuan6.EnamActivity
+import com.example.adityaauliasubhan_3tia.Home.pertemuan_10.TentActivity
 import com.example.adityaauliasubhan_3tia.Home.pertemuan_5.LimaActivity
 import com.example.adityaauliasubhan_3tia.Home.pertemuan_9.NinthActivity
 import com.example.adityaauliasubhan_3tia.LoginActivity
@@ -85,6 +86,11 @@ class HomeFragment : Fragment() {
 
         binding.btntosembilan.setOnClickListener {
             val intent = Intent(requireContext(), NinthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btntosepuluh.setOnClickListener {
+            val intent = Intent(requireContext(), TentActivity::class.java)
             startActivity(intent)
         }
 

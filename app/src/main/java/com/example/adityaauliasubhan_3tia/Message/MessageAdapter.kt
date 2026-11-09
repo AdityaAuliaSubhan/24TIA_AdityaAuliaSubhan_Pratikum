@@ -18,6 +18,7 @@ class MessageAdapter(
         val binding = ItemMessageBinding.inflate(LayoutInflater.from(context), parent, false)
         val view = binding.root
         val data = messages[position]
+
         // Muat gambar dari URL ke ImageView
         Glide.with(context)
             .load(data.avatarUrl)
